@@ -18,7 +18,8 @@ namespace Calculadora_de_Juros_de_Financiamento
 
             double taxaMensal = (taxaAnual / 100) / 12;
             double valorDaParcela = valorPrincipal * (taxaMensal / (1 - Math.Pow(1 + taxaMensal, -numeroParcelas)));
-            double totalDeJuros = valorPrincipal * (taxaAnual / 100) * (numeroParcelas / 12);
+
+            double totalDeJuros = (valorDaParcela * numeroParcelas) - valorPrincipal;
             double totalPago = valorPrincipal + totalDeJuros;
 
             lblResultado.Text = "Valor da parcela:" + valorDaParcela.ToString("N2");

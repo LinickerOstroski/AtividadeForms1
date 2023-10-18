@@ -39,9 +39,9 @@
             txtParcelas = new TextBox();
             panel2 = new Panel();
             panel3 = new Panel();
+            lblResultado2 = new Label();
             lblResultado1 = new Label();
             lblResultado = new Label();
-            lblResultado2 = new Label();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
@@ -60,6 +60,7 @@
             // btnCalcular
             // 
             btnCalcular.BackColor = SystemColors.GradientActiveCaption;
+            btnCalcular.Cursor = Cursors.Hand;
             btnCalcular.FlatStyle = FlatStyle.Flat;
             btnCalcular.Location = new Point(329, 325);
             btnCalcular.Name = "btnCalcular";
@@ -153,6 +154,19 @@
             panel3.Size = new Size(271, 143);
             panel3.TabIndex = 10;
             // 
+            // lblResultado2
+            // 
+            lblResultado2.AutoSize = true;
+            lblResultado2.BackColor = SystemColors.InactiveCaption;
+            lblResultado2.Font = new Font("Segoe MDL2 Assets", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResultado2.ForeColor = SystemColors.InfoText;
+            lblResultado2.Location = new Point(15, 106);
+            lblResultado2.Name = "lblResultado2";
+            lblResultado2.Size = new Size(34, 21);
+            lblResultado2.TabIndex = 11;
+            lblResultado2.Text = "----";
+            lblResultado2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblResultado1
             // 
             lblResultado1.AutoSize = true;
@@ -178,19 +192,6 @@
             lblResultado.TabIndex = 4;
             lblResultado.Text = "----";
             lblResultado.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblResultado2
-            // 
-            lblResultado2.AutoSize = true;
-            lblResultado2.BackColor = SystemColors.InactiveCaption;
-            lblResultado2.Font = new Font("Segoe MDL2 Assets", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblResultado2.ForeColor = SystemColors.InfoText;
-            lblResultado2.Location = new Point(15, 106);
-            lblResultado2.Name = "lblResultado2";
-            lblResultado2.Size = new Size(34, 21);
-            lblResultado2.TabIndex = 11;
-            lblResultado2.Text = "----";
-            lblResultado2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
