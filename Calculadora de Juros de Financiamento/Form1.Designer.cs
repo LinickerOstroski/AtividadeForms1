@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label2 = new Label();
             label3 = new Label();
             txtPrincipal = new TextBox();
@@ -163,19 +162,17 @@
             // 
             // btnCalcular
             // 
-            btnCalcular.BackColor = Color.OliveDrab;
+            btnCalcular.BackColor = Color.DarkSeaGreen;
             btnCalcular.Cursor = Cursors.Hand;
             btnCalcular.Dock = DockStyle.Fill;
-            btnCalcular.FlatStyle = FlatStyle.Flat;
-            btnCalcular.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCalcular.ForeColor = SystemColors.ActiveCaptionText;
-            btnCalcular.Image = (Image)resources.GetObject("btnCalcular.Image");
-            btnCalcular.ImageAlign = ContentAlignment.MiddleRight;
+            btnCalcular.Font = new Font("Segoe MDL2 Assets", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCalcular.ForeColor = SystemColors.Control;
+            btnCalcular.ImageAlign = ContentAlignment.TopLeft;
             btnCalcular.Location = new Point(572, 3);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(225, 102);
             btnCalcular.TabIndex = 1;
-            btnCalcular.Text = "Calcular";
+            btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = false;
             btnCalcular.Click += btnCalcular_Click;
             // 
