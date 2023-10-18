@@ -8,6 +8,8 @@ namespace Calculadora_de_Juros_de_Financiamento
         public Form1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -25,6 +27,12 @@ namespace Calculadora_de_Juros_de_Financiamento
             lblResultado.Text = "Valor da parcela:" + valorDaParcela.ToString("N2");
             lblResultado1.Text = "Total em Juros:" + totalDeJuros.ToString("N2");
             lblResultado2.Text = "Total Pago:" + totalPago.ToString("N2");
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
