@@ -39,7 +39,10 @@
             txtParcelas = new TextBox();
             panel2 = new Panel();
             panel3 = new Panel();
+            lblResultado1 = new Label();
             lblResultado = new Label();
+            lblResultado2 = new Label();
+            panel2.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,6 +67,7 @@
             btnCalcular.TabIndex = 1;
             btnCalcular.Text = "Cálcular";
             btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // panel1
             // 
@@ -90,11 +94,11 @@
             label3.AutoSize = true;
             label3.BackColor = SystemColors.ActiveCaption;
             label3.Font = new Font("Segoe MDL2 Assets", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(289, 191);
+            label3.Location = new Point(34, 84);
             label3.Name = "label3";
-            label3.Size = new Size(161, 19);
+            label3.Size = new Size(180, 19);
             label3.TabIndex = 4;
-            label3.Text = "Taxa de Juros Anual";
+            label3.Text = "Taxa de Juros Anual %";
             // 
             // label4
             // 
@@ -132,6 +136,7 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.Controls.Add(label3);
             panel2.Location = new Point(252, 106);
             panel2.Name = "panel2";
             panel2.Size = new Size(246, 263);
@@ -140,24 +145,52 @@
             // panel3
             // 
             panel3.BackColor = SystemColors.InactiveCaption;
+            panel3.Controls.Add(lblResultado2);
+            panel3.Controls.Add(lblResultado1);
             panel3.Controls.Add(lblResultado);
             panel3.Location = new Point(537, 162);
             panel3.Name = "panel3";
             panel3.Size = new Size(271, 143);
             panel3.TabIndex = 10;
             // 
+            // lblResultado1
+            // 
+            lblResultado1.AutoSize = true;
+            lblResultado1.BackColor = SystemColors.InactiveCaption;
+            lblResultado1.Font = new Font("Segoe MDL2 Assets", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResultado1.ForeColor = SystemColors.InfoText;
+            lblResultado1.Location = new Point(15, 62);
+            lblResultado1.Name = "lblResultado1";
+            lblResultado1.Size = new Size(34, 21);
+            lblResultado1.TabIndex = 5;
+            lblResultado1.Text = "----";
+            lblResultado1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
             lblResultado.BackColor = SystemColors.InactiveCaption;
-            lblResultado.Font = new Font("Segoe MDL2 Assets", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            lblResultado.ForeColor = SystemColors.Control;
-            lblResultado.Location = new Point(119, 52);
+            lblResultado.Font = new Font("Segoe MDL2 Assets", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResultado.ForeColor = SystemColors.InfoText;
+            lblResultado.Location = new Point(15, 16);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(21, 32);
+            lblResultado.Size = new Size(34, 21);
             lblResultado.TabIndex = 4;
-            lblResultado.Text = ".";
+            lblResultado.Text = "----";
             lblResultado.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblResultado2
+            // 
+            lblResultado2.AutoSize = true;
+            lblResultado2.BackColor = SystemColors.InactiveCaption;
+            lblResultado2.Font = new Font("Segoe MDL2 Assets", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResultado2.ForeColor = SystemColors.InfoText;
+            lblResultado2.Location = new Point(15, 106);
+            lblResultado2.Name = "lblResultado2";
+            lblResultado2.Size = new Size(34, 21);
+            lblResultado2.TabIndex = 11;
+            lblResultado2.Text = "----";
+            lblResultado2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -168,7 +201,6 @@
             Controls.Add(txtTaxa);
             Controls.Add(txtPrincipal);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(btnCalcular);
@@ -177,6 +209,8 @@
             Controls.Add(panel3);
             Name = "Form1";
             Text = "Form1";
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ResumeLayout(false);
@@ -197,5 +231,7 @@
         private Panel panel2;
         private Panel panel3;
         private Label lblResultado;
+        private Label lblResultado1;
+        private Label lblResultado2;
     }
 }
